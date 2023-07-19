@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura numero="27" fecha="19-06-2023" xsi:noNamespaceSchemaLocation="archivo_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<datos-emisor>
+		<razonsocial>Walmart</razonsocial>
+		<rfc>walm20190208</rfc>
+		<telefono>525512345678</telefono>
+		<pais>México</pais>
+		<ciudad>CDMX</ciudad>
+		<codpos>08899</codpos>
+		<calle>Insurgentes Sur</calle>
+	</datos-emisor>
+	<datos-cliente>
+		<nombre>Ana María</nombre>
+		<apellidop>Ponce</apellidop>
+		<apellidom>Urzua</apellidom>
+		<rfc>POUA991231</rfc>
+		<telefono>525598765432</telefono>
+		<nacionalidad>Mexicana</nacionalidad>
+	</datos-cliente>
+	<detalle-factura importe="19455">
+		<producto codigo-articulo="Chet1" tipo="Alimentos">
+			<descripcion>Chetos</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>25</precio>
+		</producto>
+			<producto codigo-articulo="PA2" tipo="Alimentos">
+			<descripcion>Pasas Adobadas</descripcion>
+			<cantidad>2</cantidad>
+			<descuento/>
+			<precio>30</precio>
+		</producto>
+		<producto codigo-articulo="PCL3" tipo="Electronicos">
+			<descripcion>PC Lenovo</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>34000</precio>
+		</producto>
+		<producto codigo-articulo="Mon4" tipo="Electronicos">
+			<descripcion>Monitor</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>5000</precio>
+		</producto>
+		<producto codigo-articulo="Jab5" tipo="Varios">
+			<descripcion>Jabon</descripcion>
+			<cantidad>6</cantidad>
+			<descuento/>
+			<precio>40</precio>
+		</producto>
+		<producto codigo-articulo="CremAl6" tipo="Alimentos">
+			<descripcion>Crema Alpura</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>66</precio>
+		</producto>
+		<producto codigo-articulo="Toa7" tipo="Varios">
+			<descripcion>Toalla</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>888</precio>
+		</producto>
+		<producto codigo-articulo="HDMI8" tipo="Electronicos">
+			<descripcion>Cable HDMI</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>299</precio>
+		</producto>
+		<producto codigo-articulo="Tala9" tipo="Varios">
+			<descripcion>Taladro</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>1255</precio>
+		</producto>
+		<producto codigo-articulo="CubPin10" tipo="Varios">
+			<descripcion>Cubeta Pintura</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>2780</precio>
+		</producto>
+		<producto codigo-articulo="Ten11" tipo="Varios">
+			<descripcion>Tenis</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>650</precio>
+		</producto>
+		<producto codigo-articulo="Cer12" tipo="Alimentos">
+			<descripcion>Cereal</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>70</precio>
+		</producto>
+		<producto codigo-articulo="Coc12" tipo="Alimentos">
+			<descripcion>Coca-Cola</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>36</precio>
+		</producto>
+		<producto codigo-articulo="TV5013" tipo="Electronicos">
+			<descripcion>TV 50 Pulgadas</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>9850</precio>
+		</producto>
+		<producto codigo-articulo="Colch14" tipo="Varios">
+			<descripcion>Colchon</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>9590</precio>
+		</producto>
+		<producto codigo-articulo="Sof15" tipo="Varios">
+			<descripcion>Sofa</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>8980</precio>
+		</producto>
+		<producto codigo-articulo="CuaPros16" tipo="Varios">
+			<descripcion>Cuadernos Profesional</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>98</precio>
+		</producto>
+		<producto codigo-articulo="JabRop17" tipo="Varios">
+			<descripcion>Jabon Ropa</descripcion>
+			<cantidad>2</cantidad>
+			<descuento/>
+			<precio>120</precio>
+		</producto>
+		<producto codigo-articulo="Cab18" tipo="Electronicos">
+			<descripcion>Cable 15</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>455</precio>
+		</producto>
+		<producto codigo-articulo="Pij19" tipo="Varios">
+			<descripcion>Pijama</descripcion>
+			<cantidad>1</cantidad>
+			<descuento/>
+			<precio>999</precio>
+		</producto>
+		<producto codigo-articulo="PlayCH20" tipo="Varios">
+			<descripcion>Playera CH</descripcion>
+			<cantidad>3</cantidad>
+			<descuento/>
+			<precio>556</precio>
+		</producto>
+	</detalle-factura>
+</factura>
+

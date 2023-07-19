@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:wmh="http://www.wmhelp.com/2003/eGenerator" elementFormDefault="qualified">
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="datos-emisor"/>
+        <xs:element ref="datos-cliente"/>
+        <xs:element ref="detalle-factura"/>
+      </xs:sequence>
+      <xs:attribute name="numero" type="xs:string"/>
+      <xs:attribute name="fecha" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="datos-emisor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="razonsocial"/>
+        <xs:element ref="rfc"/>
+        <xs:element ref="telefono"/>
+        <xs:element ref="pais"/>
+        <xs:element ref="ciudad"/>
+        <xs:element ref="codpos"/>
+        <xs:element ref="calle"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="razonsocial" type="xs:string"/>
+  <xs:element name="rfc" type="xs:string"/>
+  <xs:element name="telefono" type="xs:string"/>
+  <xs:element name="pais" type="xs:string"/>
+  <xs:element name="ciudad" type="xs:string"/>
+  <xs:element name="codpos" type="xs:string"/>
+  <xs:element name="calle" type="xs:string"/>
+  <xs:element name="datos-cliente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="apellidop"/>
+        <xs:element ref="apellidom"/>
+        <xs:element ref="rfc"/>
+        <xs:element ref="telefono"/>
+        <xs:element ref="nacionalidad"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string"/>
+  <xs:element name="apellidop" type="xs:string"/>
+  <xs:element name="apellidom" type="xs:string"/>
+  <xs:element name="nacionalidad" type="xs:string"/>
+  <xs:element name="detalle-factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="producto" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="importe" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="producto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="descripcion"/>
+        <xs:element ref="cantidad"/>
+        <xs:element ref="descuento"/>
+        <xs:element ref="precio"/>
+      </xs:sequence>
+      <xs:attribute name="codigo-articulo" type="xs:string" use="required"/>
+      <xs:attribute name="tipo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="descripcion" type="xs:string"/>
+  <xs:element name="cantidad" type="xs:string"/>
+  <xs:element name="descuento">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="precio" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,10 @@
+<!ELEMENT juegos (juego)*>
+<!ELEMENT juego (nombre|plataforma|precio|sinopsis)*>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre codigo CDATA #REQUIRED idioma CDATA #REQUIRED>
+<!ELEMENT plataforma (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #REQUIRED>
+<!ELEMENT sinopsis (#PCDATA)>
+<!ATTLIST sinopsis codigoDeJuego CDATA #REQUIRED>
+<!ENTITY autor "Juan Carlos Ledezma">

@@ -1,0 +1,27 @@
+	<!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+		<!ATTLIST factura numero CDATA #REQUIRED>
+		<!ATTLIST factura fecha NMTOKEN #REQUIRED>
+	<!ELEMENT datos-emisor (razonsocial, rfc, telefono, pais, ciudad, codpos, calle)>
+	<!ELEMENT razonsocial (#PCDATA)>
+	<!ELEMENT datos-cliente (nombre, apellidop, apellidom, rfc, telefono, nacionalidad)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellidop (#PCDATA)>
+	<!ELEMENT apellidom (#PCDATA)>
+	<!ELEMENT rfc (#PCDATA)>
+	<!ELEMENT telefono (#PCDATA)>
+	<!ELEMENT pais (#PCDATA)>
+	<!ELEMENT ciudad (#PCDATA|ciudad)*>
+	<!ELEMENT codpos (#PCDATA)>
+	<!ELEMENT calle (#PCDATA)>
+	<!ELEMENT nacionalidad (#PCDATA)>
+	<!ELEMENT detalle-factura (producto+)>
+		<!ATTLIST detalle-factura importe CDATA #REQUIRED>
+	<!ELEMENT producto (descripcion, cantidad, descuento?, precio)>
+		<!ATTLIST producto codigo-articulo ID #REQUIRED>
+		<!ATTLIST codigo-relacion codigo-articulo IDREF #REQUIRED>
+		<!ATTLIST producto tipo (Alimentos|Electronicos|Varios) #IMPLIED>
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT cantidad (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+	<!ELEMENT descuento EMPTY>
+	<!ENTITY entpais "México">
