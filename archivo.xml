@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<factura numero="27" fecha="19-06-2023" xsi:noNamespaceSchemaLocation="archivo_schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<factura numero="27" fecha="19-06-2023" xsi:noNamespaceSchemaLocation="archivo.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<datos-emisor>
 		<razonsocial>Walmart</razonsocial>
 		<rfc>walm20190208</rfc>
